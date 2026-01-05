@@ -57,110 +57,87 @@
       </div>
     </section>
     <!-- End Hero -->
+<div class="row">
+  <!--LEFT COLUMN - Recent Professional Experience-->
+  <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+    <h3 class="resume-title">Professional Experience</h3>
+    
+    <div class="resume-item">
+      <h4>Software Engineer - Microsoft (Secrets & PKI)</h4>
+      <h5>February 2024 - Present</h5>
+      <p><em>Redmond, WA</em></p>
+      <ul>
+        <li>Built and maintained big data platform tables across 30+ clusters per region worldwide, ingesting data from multiple Microsoft sources, transforming via Azure Synapse, and post-processing to generate production-ready schemas</li>
+        <li>Led schema migration for certificates-in-use table from V1 to V2 across isolated government air-gapped and China sovereign cloud regions with <24h cutover, delivering improved schema based on customer feedback with zero data loss and zero production incidents</li>
+        <li>Scaled pipeline capacity 4x by migrating certificate auto-activation lag calculation (time delay between certificate issuance and activation) from Kusto queries to Spark code, reducing compute load on shared Kusto clusters while maintaining 30-min SLA and processing millions of daily certificate activation events</li>
+        <li>Built automated validation framework using Kusto queries for data consistency checks and rollback scripts, covering 100% of critical tables to guarantee data integrity post-deployment</li>
+        <li>Created diagnostic tooling adopted by 5+ teams: 17 production Kusto queries for cert expiration, rotation failures, and service dependencies</li>
+        <li>DRI for 10+ production pipelines across commercial and national clouds; owned 24/7 on-call rotation handling Sev-2 alerts and prevented multiple live-site outages through proactive certificate monitoring</li>
+        <li>Decreased incident resolution time 30-40% via reusable queries against team-generated tables, enabling observability and alerts for suspicious certificate/secret behavior across Microsoft teams</li>
+        <li>Mentored 3+ junior engineers and interns on operational best practices and team onboarding</li>
+      </ul>
+    </div>
 
-    <main id="main">
-      <!-- ======= Resume Section ======= -->
-      <section id="resume" class="resume">
-        <div class="container">
-          <div class="section-title">
-            <h2>
-              Resume 
-              <a href="assets/Elizabeth_Castillo_Resume.pdf" download="Elizabeth_Castillo_Resume.pdf" style="text-decoration: none; color: #149ddd; font-size: 0.8em; margin-left: 10px;">
-                <i class="bi bi-download"></i>
-              </a>
-            </h2>
-            <p>University of Washington Alumni: B.S. Computer Science and Software Engineering</p>
-          </div>
-          <div class="row">
-           <!--SECOND ROW-->
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Professional Experience</h3>
-            
-            <div class="resume-item">
-              <h4>Software Engineer - Microsoft (Secrets & PKI)</h4>
-              <h5>February 2024 - Present</h5>
-              <p><em>Redmond, WA</em></p>
-              <ul>
-                <li>Built and maintained big data platform tables across 30+ clusters per region worldwide, ingesting data from multiple Microsoft sources, transforming via Azure Synapse, and post-processing to generate production-ready schemas</li>
-                <li>Led schema migration for certificates-in-use table from V1 to V2 across isolated government air-gapped and China sovereign cloud regions with <24h cutover, delivering improved schema based on customer feedback with zero data loss and zero production incidents</li>
-                <li>Scaled pipeline capacity 4x by migrating certificate auto-activation lag calculation (time delay between certificate issuance and activation) from Kusto queries to Spark code, reducing compute load on shared Kusto clusters while maintaining 30-min SLA and processing millions of daily certificate activation events</li>
-                <li>Built automated validation framework using Kusto queries for data consistency checks and rollback scripts, covering 100% of critical tables to guarantee data integrity post-deployment</li>
-                <li>Created diagnostic tooling adopted by 5+ teams: 17 production Kusto queries for cert expiration, rotation failures, and service dependencies</li>
-                <li>DRI for 10+ production pipelines across commercial and national clouds; owned 24/7 on-call rotation handling Sev-2 alerts and prevented multiple live-site outages through proactive certificate monitoring</li>
-                <li>Decreased incident resolution time 30-40% via reusable queries against team-generated tables, enabling observability and alerts for suspicious certificate/secret behavior across Microsoft teams</li>
-                <li>Mentored 3+ junior engineers and interns on operational best practices and team onboarding</li>
-              </ul>
-            </div>
+    <div class="resume-item">
+      <h4>Software Engineering Intern - Microsoft (Secrets & PKI)</h4>
+      <h5>June 2023 - September 2023</h5>
+      <p><em>Redmond, WA</em></p>
+      <ul>
+        <li>Automated testing for <a href="https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/key-vault-linux" target="_blank">Azure Key Vault for Linux VM extension</a> across 20+ VM images using ARM templates and the LISA framework, ensuring production readiness</li>
+        <li>Contributed to the open-source <a href="https://github.com/microsoft/lisa" target="_blank">LISA framework</a> and integrated automated validation into CI/CD pipelines, eliminating manual test cycles and accelerating release velocity (<a href="https://github.com/microsoft/lisa/graphs/contributors" target="_blank">view contributions as t-ecastillo</a>)</li>
+        <li>Improved developer experience: Updated official Azure Key Vault Linux extension documentation</li>
+        <li>Applied Python, JSON, and Flake8 standards for code quality and consistency</li>
+      </ul>
+    </div>
+  </div>
 
-            <div class="resume-item">
-              <h4>Software Engineering Intern - Microsoft (Secrets & PKI)</h4>
-              <h5>June 2023 - September 2023</h5>
-              <p><em>Redmond, WA</em></p>
-              <ul>
-                <li>Automated testing for <a href="https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/key-vault-linux" target="_blank">Azure Key Vault for Linux VM extension</a> across 20+ VM images using ARM templates and the LISA framework, ensuring production readiness</li>
-                <li>Contributed to the open-source <a href="https://github.com/microsoft/lisa" target="_blank">LISA framework</a> and integrated automated validation into CI/CD pipelines, eliminating manual test cycles and accelerating release velocity (<a href="https://github.com/microsoft/lisa/graphs/contributors" target="_blank">view contributions as t-ecastillo</a>)</li>
-                <li>Improved developer experience: Updated official Azure Key Vault Linux extension documentation</li>
-                <li>Applied Python, JSON, and Flake8 standards for code quality and consistency</li>
-              </ul>
-            </div>
+  <!--RIGHT COLUMN - Education + Earlier Experience-->
+  <div class="col-lg-6" data-aos="fade-up">
+    <h3 class="resume-title">Education</h3>
+    <div class="resume-item">
+      <h4>Bachelor of Science - Computer Science & Software Engineering</h4>
+      <h5>2021 - 2023</h5>
+      <p><em><strong>GPA: 3.70</strong> | University of Washington, Bothell Campus, WA</em></p>
+      <p><strong>Dean's List:</strong> Three consecutive quarters (Fall 2022, Winter 2023, Spring 2023)</p>
+      <p><strong>Leadership:</strong> President of the Computing Careers Club at University of Washington Bothell</p>
+    </div>
 
-            <div class="resume-item">
-              <h4>Research Undergraduate Assistant - Paul G. Allen School of Computer Science at University of Washington</h4>
-              <h5>September 2022 - Current</h5>
-              <p><em>Seattle, WA</em></p>
-              <ul>
-                <li>Developed front-end projects using React, including the creation of dynamic and interactive user interfaces</li>
-                <li>Collaborated with UX designers to turn wireframes and designs into functional and visually appealing user interfaces</li>
-                <li>Followed best practices and standards in coding, such as writing clean and maintainable code, and implementing appropriate error handling and debugging techniques</li>
-                <li>Collaborated with teammates in applying the five-stage Design Thinking model to develop a human-centric-solution</li>
-              </ul>
-            </div>
+    <h3 class="resume-title" style="margin-top: 30px;">Additional Experience</h3>
 
-            <div class="resume-item">
-              <h4>New Technologist - Microsoft</h4>
-              <h5>June 2022 - August 2022</h5>
-              <p><em>Redmond, WA</em></p>
-              <ul>
-                <li>Developed a web app with React (HTML, CSS, & JavaScript), Bootstrap, Fluent UI, and Firebase for the M365 core team</li>
-                <li>Delivered product specification—which encompasses journey maps, user stories, user research, and more—with Microsoft SWE & PM coaches</li>
-                <li>Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the design</li>
-                <li>Collaborated with teammates in applying the five-stage Design Thinking model to develop a human-centric-solution</li>
-                <li>Conducted extensive user research to understand user needs, preferences, and pain points</li>
-                <li>Worked with cross-functional teams to define and prioritize product features and requirements</li>
-                <li>Successfully delivered the project within the given timeframe and budget</li>
-              </ul>
-            </div>
+    <div class="resume-item">
+      <h4>Research Undergraduate Assistant</h4>
+      <h5>September 2022 - Current</h5>
+      <p><em>Paul G. Allen School of Computer Science, University of Washington - Seattle, WA</em></p>
+      <ul>
+        <li>Developed front-end projects using React with dynamic and interactive user interfaces</li>
+        <li>Collaborated with UX designers to turn wireframes into functional interfaces</li>
+        <li>Applied Design Thinking model to develop human-centric solutions</li>
+      </ul>
+    </div>
 
-            <div class="resume-item">
-              <h4>Human-Computer Interaction REU Internship</h4>
-              <h5>June 2021 - Present</h5>
-              <p><em>University of Washington - Paul G. Allen School - Seattle, WA</em></p>
-              <ul>
-                <li>Worked alongside esteemed PhD students and Postdoctoral researchers in the development of academic papers for submission to major conferences such as the Conference on Human-Computer Interaction (CHI) and the Conference on Computer-Supported Cooperative Work and Social Computing (CSCW CHI)</li>
-                <li>Conducted literature reviews, gathered and analyzed data, designed and conducted experiments, and contributed to the writing and editing of papers</li>
-                <li>Participated in weekly meetings to discuss research progress and provide feedback on papers</li>
-                <li>Coded and analyzed qualitative data, as well as translated interviews conducted in Spanish to English</li>
-                <li>Maintained a keen attention to detail and a commitment to maintaining the highest standards of research ethics and confidentiality</li>
-                <li>Gained valuable experience in academic research and exposure to the rigorous standards and expectations of major conferences in the field</li>
-              </ul>
-            </div>
-          </div>
-            <div class="col-lg-6" data-aos="fade-up">
-              <h3 class="resume-title">Education</h3>
-              <div class="resume-item">
-                <h4>Bachelor of Science &amp; Computer Science & Software Engineering</h4>
-                <h5>2021 - 2023</h5>
-                <p><em><strong>GPA: 3.70</strong> University of Washington, Bothell Campus, WA</em></p>
-                <p>The CSSE degree program offers a multidisciplinary approach that will enable students to develop a wide range of competencies needed for success in the dynamic and varied field of software applications. These include analysis and problem solving techniques; communication and business management skills; in-depth understanding of the software design and development process.</p>
-                <p>Source: https://www.uwb.edu/bscsse.</p>
-                <br> <strong>Dean's list for three quarters</strong>
-                <br> <strong>President of the Computing Careers Club at University of Washington Bothell</strong>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- End Resume Section -->
+    <div class="resume-item">
+      <h4>New Technologist - Microsoft</h4>
+      <h5>June 2022 - August 2022</h5>
+      <p><em>Redmond, WA</em></p>
+      <ul>
+        <li>Developed a web app with React, Bootstrap, Fluent UI, and Firebase for the M365 core team</li>
+        <li>Delivered product specification with Microsoft SWE & PM coaches</li>
+        <li>Conducted user research and worked with cross-functional teams</li>
+      </ul>
+    </div>
+
+    <div class="resume-item">
+      <h4>Human-Computer Interaction REU Intern</h4>
+      <h5>June 2021 - August 2021</h5>
+      <p><em>University of Washington - Paul G. Allen School - Seattle, WA</em></p>
+      <ul>
+        <li>Worked alongside PhD students on academic papers for CHI and CSCW conferences</li>
+        <li>Conducted literature reviews, data analysis, and qualitative coding</li>
+        <li>Translated interviews from Spanish to English</li>
+      </ul>
+    </div>
+  </div>
+</div>
       <!-- ======= Skills Section ======= -->
       <section id="skills" class="skills section-bg">
         <div class="container">
